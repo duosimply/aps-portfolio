@@ -104,7 +104,7 @@ function App() {
                 <AStar />
               </div>
               <div className='flex flex-col justify-baseline items-center w-full'>
-                <img src="/images/astar.png" alt="astar" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
+                <img src={`${import.meta.env.BASE_URL}images/astar.png`} alt="astar" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
                 <caption className='text-sm pt-1'><b>Fig 1:</b> Showcasing the working of A*</caption>
               </div>
             </div>
@@ -127,7 +127,7 @@ function App() {
                 <MOS />
               </div>
               <div className='flex flex-col justify-baseline items-center w-full'>
-                <img src="/images/mos.jpg" alt="mos" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
+                <img src={`${import.meta.env.BASE_URL}images/mos.jpg`}  alt="mos" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
                 <caption className='text-sm pt-1'><b>Fig 2:</b> Partition through square root decomposition</caption>
               </div>
             </div>
@@ -175,7 +175,7 @@ function App() {
                 <KDTree />
               </div>
               <div className='flex flex-col justify-baseline items-center w-full'>
-                <img src="/images/kdtree.png" alt="kdtree" width={512} className='border border-[#fe5953] rounded-lg mt-10' />
+                <img src={`${import.meta.env.BASE_URL}images/kdtree.png`}  alt="kdtree" width={512} className='border border-[#fe5953] rounded-lg mt-10' />
                 <caption className='text-sm pt-1'><b>Fig 3:</b> 2D Tree Visualization</caption>
               </div>
             </div>
@@ -230,7 +230,7 @@ function App() {
               </div>
               <div className='flex flex-col justify-baseline items-center w-full'>
 
-                <img src="/images/trie2.png" alt="trie" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
+                <img src={`${import.meta.env.BASE_URL}images/trie2.png`}  alt="trie" width={384} className='border border-[#fe5953] rounded-lg mt-10' />
                 <caption className='text-sm pt-1'><b>Fig 4:</b> Example of a Trie</caption>
               </div>
             </div>
