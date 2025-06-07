@@ -1,5 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CodeDropdown from '../CodeDropdown';
 
 const CppCode = `
 struct Node {
@@ -79,11 +78,15 @@ void aStar(const vector<vector<int>>& grid, pair<int, int> start, pair<int, int>
 
 `;
 
+const snippet = [
+  {
+    content: CppCode
+  }
+]
+
 const AStar = () => {
   return (
-    <SyntaxHighlighter language="cpp" style={duotoneDark} showLineNumbers>
-      {CppCode}
-    </SyntaxHighlighter>
+    <CodeDropdown items={snippet}/>
   );
 }
 

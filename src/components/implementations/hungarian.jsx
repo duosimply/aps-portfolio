@@ -1,5 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CodeDropdown from '../CodeDropdown';
 
 const CppCode = `
 const int INF = numeric_limits<int>::max();
@@ -53,11 +52,15 @@ int hungarian(const vector<vector<int>>& cost) {
     }
 `;
 
+const snippet = [
+  {
+    content: CppCode
+  }
+]
+
 const Hungarian = () => {
   return (
-    <SyntaxHighlighter language="cpp" style={duotoneDark} showLineNumbers>
-      {CppCode}
-    </SyntaxHighlighter>
+    <CodeDropdown items={snippet}/>
   )
 }
 

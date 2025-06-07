@@ -1,5 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CodeDropdown from '../CodeDropdown';
 
 const CppCode = `
 struct Query {
@@ -35,11 +34,15 @@ vector<int> mosAlgorithm(vector<int>& arr, vector<Query>& queries) {
 }
 `;
 
+const snippet = [
+  {
+    content: CppCode
+  }
+]
+
 const MOS = () => {
   return (
-    <SyntaxHighlighter language="cpp" style={duotoneDark} showLineNumbers>
-      {CppCode}
-    </SyntaxHighlighter>
+    <CodeDropdown items={snippet}/>
   )
 }
 

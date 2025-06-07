@@ -1,5 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CodeDropdown from '../CodeDropdown';
 
 const CppCode = `
 vector<double> computePageRank(const vector<vector<int>>& graph, int iterations = 100, double damping = 0.85, double epsilon = 1e-6) {
@@ -36,11 +35,15 @@ vector<double> computePageRank(const vector<vector<int>>& graph, int iterations 
 }
 `;
 
+const snippet = [
+  {
+    content: CppCode
+  }
+]
+
 const PageRank = () => {
   return (
-    <SyntaxHighlighter language="cpp" style={duotoneDark} showLineNumbers>
-      {CppCode}
-    </SyntaxHighlighter>
+    <CodeDropdown items={snippet}/>
   )
 }
 
