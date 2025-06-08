@@ -58,7 +58,7 @@ function App() {
             <h2 className='py-8 font-medium text-3xl'>
               About
               <img
-                src='valve.svg'
+                src={`${import.meta.env.BASE_URL}valve.svg`}
                 alt='valve-logo'
                 width={100}
                 className='inline ml-4 mb-1 bg-white'
